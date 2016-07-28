@@ -15,6 +15,8 @@
 		EEA8EED41D49D2E50080DA93 /* ViewMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8EED31D49D2E50080DA93 /* ViewMasa.swift */; };
 		EEA8EED61D49D8DF0080DA93 /* ViewQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8EED51D49D8DF0080DA93 /* ViewQueso.swift */; };
 		EEA8EED81D49DD250080DA93 /* ViewIngrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8EED71D49DD250080DA93 /* ViewIngrediente.swift */; };
+		EEA8EEDA1D49E0B00080DA93 /* ViewConfirmacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8EED91D49E0B00080DA93 /* ViewConfirmacion.swift */; };
+		EEA8EEDC1D49E2A00080DA93 /* ViewPedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8EEDB1D49E2A00080DA93 /* ViewPedido.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EEA8EED31D49D2E50080DA93 /* ViewMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewMasa.swift; sourceTree = "<group>"; };
 		EEA8EED51D49D8DF0080DA93 /* ViewQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewQueso.swift; sourceTree = "<group>"; };
 		EEA8EED71D49DD250080DA93 /* ViewIngrediente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIngrediente.swift; sourceTree = "<group>"; };
+		EEA8EED91D49E0B00080DA93 /* ViewConfirmacion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfirmacion.swift; sourceTree = "<group>"; };
+		EEA8EEDB1D49E2A00080DA93 /* ViewPedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPedido.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				EEA8EED31D49D2E50080DA93 /* ViewMasa.swift */,
 				EEA8EED51D49D8DF0080DA93 /* ViewQueso.swift */,
 				EEA8EED71D49DD250080DA93 /* ViewIngrediente.swift */,
+				EEA8EED91D49E0B00080DA93 /* ViewConfirmacion.swift */,
+				EEA8EEDB1D49E2A00080DA93 /* ViewPedido.swift */,
 			);
 			path = Appizzas;
 			sourceTree = "<group>";
@@ -149,6 +155,8 @@
 				EEA8EEC41D49CF5E0080DA93 /* ViewController.swift in Sources */,
 				EEA8EEC21D49CF5E0080DA93 /* AppDelegate.swift in Sources */,
 				EEA8EED61D49D8DF0080DA93 /* ViewQueso.swift in Sources */,
+				EEA8EEDC1D49E2A00080DA93 /* ViewPedido.swift in Sources */,
+				EEA8EEDA1D49E0B00080DA93 /* ViewConfirmacion.swift in Sources */,
 				EEA8EED41D49D2E50080DA93 /* ViewMasa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
