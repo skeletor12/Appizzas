@@ -33,6 +33,12 @@ class ViewMasa: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let envio2=imprime2()
+        let Vistaqueso=segue.destinationViewController as! ViewQueso
+        Vistaqueso.texmas=envio2
+        Vistaqueso.textam=textam
+    }
     
     
     @IBAction func botmas(sender: AnyObject) {
