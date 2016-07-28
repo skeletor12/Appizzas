@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F6c-ac-RVN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Appizzas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,209 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LUIGI´S PIZZAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XU-DM-aqH">
+                                <rect key="frame" x="197" y="84" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtC-SB-Ra0">
+                                <rect key="frame" x="104" y="196" width="60" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CHICA">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="chicaSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0d-uU-eyd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9C-4R-3IO">
+                                <rect key="frame" x="212" y="196" width="87" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="MEDIANA">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="medianaSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MB4-lD-pLR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFb-mz-X8m">
+                                <rect key="frame" x="342" y="196" width="83" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="GRANDE">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="grandeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nUj-BP-f7X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrZ-P1-Owf">
+                                <rect key="frame" x="245" y="254" width="110" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CONTINUAR"/>
+                                <connections>
+                                    <action selector="bottam:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqO-jk-f9l"/>
+                                    <segue destination="Yfk-Kw-w89" kind="show" id="J9n-UI-NtC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SELECCIONA EL TAMAÑO DE TU PIZZA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xt-h8-hXk">
+                                <rect key="frame" x="147" y="137" width="307" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zFb-mz-X8m" firstAttribute="leading" secondItem="Q9C-4R-3IO" secondAttribute="trailing" constant="20" id="1kh-8H-OJh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zFb-mz-X8m" secondAttribute="trailing" constant="10" id="4Wv-eY-N1w"/>
+                            <constraint firstItem="XtC-SB-Ra0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="AzQ-v0-JJO"/>
+                            <constraint firstItem="Q9C-4R-3IO" firstAttribute="leading" secondItem="XtC-SB-Ra0" secondAttribute="trailing" constant="20" id="Beg-nj-VVf"/>
+                            <constraint firstItem="3XU-DM-aqH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CZf-fL-SRo"/>
+                            <constraint firstItem="3Xt-h8-hXk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MPI-DO-YgR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gED-SO-UvY"/>
+                    <connections>
+                        <outlet property="chica" destination="XtC-SB-Ra0" id="4wr-vt-5gk"/>
+                        <outlet property="grande" destination="zFb-mz-X8m" id="MCq-SC-jd6"/>
+                        <outlet property="mediana" destination="Q9C-4R-3IO" id="1AU-93-wOe"/>
+                        <outlet property="siguiente" destination="FrZ-P1-Owf" id="AvN-1j-pTD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="418"/>
+        </scene>
+        <!--View Masa-->
+        <scene sceneID="FaV-Tg-eN1">
+            <objects>
+                <viewController id="Yfk-Kw-w89" customClass="ViewMasa" customModule="Appizzas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qhO-gh-yqT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qoe-HU-O5o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBk-qt-vs6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="LUIGI´S PIZZAS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igP-T2-9aZ">
+                                <rect key="frame" x="238" y="151" width="213" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SLEECCIONA EL TIPO DE MASA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-LP-QNt">
+                                <rect key="frame" x="177" y="201" width="246" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGQ-Dh-NA1">
+                                <rect key="frame" x="107" y="252" width="91" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="DELGADA">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delgadaSelected:" destination="Yfk-Kw-w89" eventType="touchUpInside" id="J2M-ec-S0o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7L-Rk-SaB">
+                                <rect key="frame" x="248" y="252" width="77" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="GRUESA">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="gruesaSelected:" destination="Yfk-Kw-w89" eventType="touchUpInside" id="Pbd-JS-RRk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMV-TH-iI8">
+                                <rect key="frame" x="360" y="252" width="91" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CRUJIENTE">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="crujienteSelected:" destination="Yfk-Kw-w89" eventType="touchUpInside" id="i17-TF-NWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRK-Yl-tYx">
+                                <rect key="frame" x="240" y="306" width="120" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="CONTINUAR"/>
+                                <connections>
+                                    <action selector="botmas:" destination="Yfk-Kw-w89" eventType="touchUpInside" id="XaI-es-oRt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TU SELECCION AL MOMENTO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzV-qc-eh9">
+                                <rect key="frame" x="20" y="426" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAMAÑO:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-ev-qio">
+                                <rect key="frame" x="20" y="467" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TAMAÑO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-0x-R8S">
+                                <rect key="frame" x="102" y="467" width="190" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gSf-LP-QNt" firstAttribute="centerX" secondItem="cBk-qt-vs6" secondAttribute="centerX" id="8ZI-Z3-AeQ"/>
+                            <constraint firstItem="Y7L-Rk-SaB" firstAttribute="leading" secondItem="KGQ-Dh-NA1" secondAttribute="trailing" constant="20" id="Suj-jC-P8x"/>
+                            <constraint firstItem="GMV-TH-iI8" firstAttribute="leading" secondItem="Y7L-Rk-SaB" secondAttribute="trailing" constant="20" id="Zes-WS-AhB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GMV-TH-iI8" secondAttribute="trailing" constant="10" id="cQm-n4-l0m"/>
+                            <constraint firstItem="KGQ-Dh-NA1" firstAttribute="leading" secondItem="cBk-qt-vs6" secondAttribute="leadingMargin" constant="10" id="pCO-uV-7bh"/>
+                            <constraint firstItem="igP-T2-9aZ" firstAttribute="centerX" secondItem="cBk-qt-vs6" secondAttribute="centerX" id="x8a-Wd-vmM"/>
+                            <constraint firstItem="DRK-Yl-tYx" firstAttribute="centerX" secondItem="cBk-qt-vs6" secondAttribute="centerX" id="zR4-dT-l0w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="crujiente" destination="GMV-TH-iI8" id="f6Z-C5-iOf"/>
+                        <outlet property="delgada" destination="KGQ-Dh-NA1" id="vpU-Xv-ype"/>
+                        <outlet property="gruesa" destination="Y7L-Rk-SaB" id="E73-Ph-sa1"/>
+                        <outlet property="tamañores" destination="wbl-0x-R8S" id="AxO-CD-kZS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bz9-Wm-5WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1751" y="418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wj4-qt-41e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F6c-ac-RVN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9e6-6k-8Jf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CdO-kF-ccN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDJ-t4-32S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
         </scene>
     </scenes>
 </document>
